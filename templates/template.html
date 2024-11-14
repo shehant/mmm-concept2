@@ -1,0 +1,96 @@
+
+
+        <div id="row_template_wrapper">
+        <div><h2>Rowing Record</h2> </div>
+        <div>
+            <table id="rowingResults">
+                <tr class="colheaders">
+                    <th></th>
+                    <th>Workouts</th>
+                    <th>Meters</th>
+                    <th>Average Pace</th>
+                </tr>
+                
+                <!-- This Season -->
+                <tr class="seasonHeader">
+                    <td colspan="4" align=left>2023-2024 Season</td>
+                </tr>
+
+                <tr class="thisSeason TW">
+                    <th class="lefthead">Week</th>
+                    <td>{TW_Workouts}</td>
+                    <td>{TW_Meters}</td>
+                    <td>{TW_Pace}</td>
+                </tr>
+
+                <tr class="thisSeason L4W">
+                    <th class="lefthead">L4W</th>
+                    <td>{L4W_Workouts}</td>
+                    <td>{L4W_Meters}</td>
+                    <td>{L4W_Pace}</td>
+                </tr>
+
+                <tr class="thisSeason SeasonResults">
+                    <th class="lefthead">Season</th>
+                    <td>{Season_Workouts}</td>
+                    <td>{Season_Meters}</td>
+                    <td>{Season_Pace}</td>
+                </tr>
+
+                <!-- Last Season -->
+                <tr class="seasonHeader">
+                    <td colspan="4" align=left>2022-2023 Season</td>
+                </tr>
+                <tr class="yoySeason TW">
+                    <th class="lefthead">Week</th>
+                    <td>{YoY_TW_Workouts}</td>
+                    <td>{YoY_TW_Meters}</td>
+                    <td>{YoY_TW_Pace}</td>
+                </tr>
+
+                <tr class="yoySeason L4W">
+                    <th class="lefthead">L4W</th>
+                    <td>{YoY_L4W_Workouts}</td>
+                    <td>{YoY_L4W_Meters}</td>
+                    <td>{YoY_L4W_Pace}</td>
+                </tr>
+
+                <tr class="yoySeason SeasonResults">
+                    <th class="lefthead">Season</th>
+                    <td>{YoY_Season_Workouts}</td>
+                    <td>{YoY_Season_Meters}</td>
+                    <td>{YoY_Season_Pace}</td>
+                </tr>
+                
+
+                <!-- % Change  -->
+                <tr class="seasonHeader">
+                    <td colspan="4" align=left>&#916; Change</td>
+                </tr>
+                <tr class="ch TW">
+                    <th class="lefthead">Week</th>
+                    <td>{Ch_TW_Workouts}</td>
+                    <td>{Ch_TW_Meters}</td>
+                    <td>{Ch_TW_Pace}</td>
+                </tr>
+
+                <tr class="ch L4W">
+                    <th class="lefthead">L4W</th>
+                    <td>{Ch_L4W_Workouts}</td>
+                    <td>{Ch_L4W_Meters}</td>
+                    <td>{Ch_L4W_Pace}</td>
+                </tr>
+
+                <tr class="ch SeasonResults">
+                    <th class="lefthead">Season</th>
+                    <td>{Ch_Season_Workouts}</td>
+                    <td>{Ch_Season_Meters}</td>
+                    <td>{Ch_Season_Pace}</td>
+                </tr>
+
+            </table>
+        </div>
+
+        <div id="rowDays">You have rowed {percent_row_days} this year for a total of {total_row_hours}</div>
+        <div id="yoyRowDays">Last Year you rowed {yoy_percent_row_days} and {yoy_row_hours} hours</div>
+    </div>
